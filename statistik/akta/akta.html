@@ -8,31 +8,40 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="akta.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#navbarContainer").load("../navbar/navbar.html");
+        });
+        $(document).ready(function() {
+            $("#footerContainer").load("..//footer/footer.html");
+        });
+    </script>
 </head>
 
 <body>
-    <div class="bodi">
-        <section class="jumbotron position-relative">
+    <div id="navbarContainer"></div>
 
+        <section class="jumbotron position-relative container-xxl">
             <!-- Content -->
-            <div class="d-flex justify-content-center flex-wrap">
+            <div class="d-flex justify-content-center flex-wrap" style="margin-top: 7rem;">
                 <div class="card p-3 mb-5 bg-body rounded text-center"
                     style="width: 12rem; margin-right: 30px; box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);">
+                    <a href="../../StatistikPenduduk/DataUmur/dataUmur.html" style="text-decoration: none;">
                         <img src="../Assets/image 1.png" class="card-img-top mx-auto d-block" alt="..."
                             style="width: 70px; height: 70px;">
                         <div class="card-body">
                             <p class="card-text">Statistik Penduduk</p>
                         </div>
+                    </a>
                 </div>
                 <div class="card p-3 mb-5 bg-body rounded text-center"
                     style="width: 12rem; margin-right: 30px; box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);">
-                    <a href="../../StatistikPenduduk/DataUmur/dataUmur.html" style="text-decoration: none;">
                     <img src="../Assets/image 4.png" class="card-img-top mx-auto d-block" alt="..."
                         style="width: 70px; height: 70px;">
                     <div class="card-body">
                         <p class="card-text">Statistik Keluarga</p>
                     </div>
-                    </a>
                 </div>
                 <div class="card p-3 mb-5 bg-body rounded text-center"
                     style="width: 12rem; margin-right: 30px; box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.25);">
@@ -59,8 +68,16 @@
                     </div>
                 </div>
             </div>
-        </section>
-    </div> 
+
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 160">
+                  <path fill="#FFFFFF" fill-opacity="1"
+                    d="M0,160L120,144C240,128,480,96,720,96C960,96,1200,128,1320,144L1440,160L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z">
+                  </path>
+                </svg>
+            </div>
+
+        </section> 
 
     <div class="container-fluid mb-4">
         <div class="row">
@@ -176,6 +193,8 @@
             </div>
         </div>
     </div>
+
+    <div id="footerContainer"></div>
 
     <script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous">

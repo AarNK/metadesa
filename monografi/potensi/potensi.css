@@ -1,6 +1,6 @@
 .jumbotron {
     padding-top: 5rem;
-    
+    background: var(--bg-gradien, linear-gradient(135deg, rgba(143, 231, 255, 0.50) 0%, rgba(57, 160, 223, 0.50) 100%));
 }
 
 .box {
@@ -16,8 +16,8 @@
 }
 
 .mono {
-    margin-top: 3rem;
-    margin-left: 7px;
+    margin-top: 2rem;
+    margin-left: -2px;
     margin-right: 7px;
     padding: 0;
     background-color: rgba(255, 255, 255, 0.75);
